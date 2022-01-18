@@ -1,6 +1,7 @@
 import {useState} from "react"
 
 export default function PetItem(props) {
+  
   const pet = props.pet;
   const [petImage, setPetImage] = useState(pet.image);
   

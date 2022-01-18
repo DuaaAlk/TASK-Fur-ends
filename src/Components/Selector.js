@@ -1,12 +1,9 @@
-
 const Selector = ( {changeType } ) => {
     return (
         <div>
               Type:
               <select onChange = {changeType} class="form-select"> 
-                <option value="" selected>
-                  All
-                </option>
+                <option value="" selected> All</option>
                 <option value="Cat">Cat</option>
                 <option value="Dog">Dog</option>
                 <option value="Rabbit">Rabbit</option>
@@ -14,5 +11,4 @@ const Selector = ( {changeType } ) => {
         </div>
     )
 }
-
 export default Selector

@@ -5,12 +5,11 @@ import Selector from './Selector';
 
 export default function PetsList(props) {  
   
-  const [query, setQuery] = useState();
-  const [type, setType] = useState();
+  const [query, setQuery] = useState("");
+  const [type, setType] = useState("");
 
   function changeQuery (event) {
     setQuery(event.target.value)
-    
   };
   
   function changeType (event) {
@@ -25,9 +24,7 @@ export default function PetsList(props) {
         <div class="row justify-content-center">
           <div class="col-xxl-5 col-xl-6 col-lg-7">
             <div class="section-title text-center mb-30">
-              <h1 class="mb-25 wow fadeInUp" data-wow-delay=".2s">
-                Fur-ends
-              </h1>
+              <h1 class="mb-25 wow fadeInUp" data-wow-delay=".2s">Fur-ends</h1>
               <SearchBar changeQuery = {changeQuery} />
               <br></br>
               <Selector changeType = {changeType} />
